@@ -1,0 +1,27 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> -->
+<mat-toolbar color="primary" ngClass="gap">
+    <span ngClass="gap">Shopping_App</span>
+    <span ngClass="menu_spacer" ><a routerLink ="home" routerLinkActive="active-link">Home</a></span>
+    <span ngClass="menu_spacer" *ngIf="!isAdminLoggedIn"> <a routerLink ="auth/login" routerLinkActive="active-link">Login</a></span>
+    <span ngClass="menu_spacer" *ngIf="!isAdminLoggedIn"><a routerLink ="auth/register" routerLinkActive="active-link">Register</a></span>
+    <span ngClass="menu_spacer" *ngIf="isAdminLoggedIn"><a routerLink ="products" routerLinkActive="active-link">Products</a></span>
+    <span ngClass="menu_spacer" *ngIf="isAdminLoggedIn"><a routerLink ="admin/dashboard" routerLinkActive="active-link">Dashboard</a></span>
+    <span ngClass="menu_spacer" *ngIf="isAdminLoggedIn"><a routerLink ="auth/logout" routerLinkActive="active-link">Logout</a></span>
+</mat-toolbar>
+<!-- <body>
+    <a href="">Home</a>&nbsp;
+    <a href="">Login</a>&nbsp;
+    <a href="">Register</a>&nbsp;
+    <a href="">Shopping</a>&nbsp;
+    <a href="">Dashboard</a>&nbsp;
+    <a href="">Logout</a>&nbsp;
+</body>
+</html> -->
+<span></span>

@@ -1,0 +1,54 @@
+{
+  "wscategories": [
+    {
+      "id": 1,
+      "name": "Mobiles"
+    },
+    {
+      "id": 2,
+      "name": "Computer and tablets"
+    },
+    {
+      "id": 3,
+      "name": "Laptops"
+    },
+    {
+      "id": 4,
+      "name": "Others electronics parts"
+    },
+    {
+      "id": 5,
+      "name": "pcsss"
+    }
+  ],
+  "wsproducts": [
+    {
+      "id": 2,
+      "name": "Dell",
+      "price": "70000 ",
+      "description": "i5 laptop",
+      "ctgid": "2"
+    },
+    {
+      "id": 3,
+      "name": "Dell PC",
+      "price": "70000 ",
+      "description": "i5 laptop",
+      "ctgid": "3"
+    },
+    {
+      "id": 2,
+      "name": "HP",
+      "price": "60000",
+      "description": "i7 laptop",
+      "ctgid": "2"
+    },
+    {
+      "id": 1,
+      "name": "Samsung",
+      "price": "80000",
+      "description": "samsung galaxy",
+      "ctgid": "1"
+    }
+  ]
+}

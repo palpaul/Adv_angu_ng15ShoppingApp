@@ -1,0 +1,28 @@
+<h3>Manage Categories</h3>
+
+
+<form action="">
+
+    ID: <input type="text" name="txtId" placeholder="ID"[(ngModel)]="frmCategory.id" style="width: 50px;" readonly>
+    ID: <input type="text" name="txtName" placeholder="Enter Name" [(ngModel)]="frmCategory.name" >&nbsp;
+    <button (click)="save()">Save</button>
+</form>
+
+<table border="2">
+
+<tr>
+
+    <th>Id</th><th>Name</th><th>Actionns</th>
+</tr>
+<tr *ngFor="let ctg of mgCategories">
+<td>{{ctg.id}}</td>
+<td>{{ctg.name}}</td>    
+
+<td>
+<button (click)="edit(ctg)">Edit</button>
+<button (click)="delete(ctg.id)">Delete</button>
+
+
+</td>
+</tr>
+</table>

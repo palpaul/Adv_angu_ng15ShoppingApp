@@ -1,0 +1,26 @@
+<!-- <h3>Register Here</h3>
+ reactive(Model driven) forms ,, FormGroups and FromCOntrols are the instace of reactive(model driven forms) -->
+<form  [formGroup]="myForm">
+    UserName: <input type="text" formControlName="uname" placeholder="Username" name="username"/> 
+    <b style="color: red;" *ngIf="myForm.controls['uname'].invalid && myForm.controls['uname'].dirty">
+        User Name is Required </b><br/>
+    Password: <input type="password" formControlName="upwd" placeholder="Password" name="password"/> 
+    <b style="color: red;" *ngIf="myForm.controls['upwd'].invalid && myForm.controls['upwd'].dirty" >
+        <span *ngIf="myForm.controls['upwd'].errors!['required']">Password is Required</span>
+        <span *ngIf="myForm.controls['upwd'].errors!['minlength']">Password must be 6 characters long.</span>
+ 
+
+    </b>
+    <br/>
+    <button [disabled]="myForm.invalid" > Quick Register</button>
+
+
+</form>
+
+<!-- chtGpt Solution -->
+<!-- <form [formGroup]= "registerForm" (ngSubmit)="onSubmit()"><br>
+    <input type="text" formControlName="name" placeholder="Name"><br><br>
+    <input type="email" formControlName="email" placeholder="Email"><br><br>
+    <input type="password" formControlName="password" placeholder="Password"><br><br>
+    <button type="submit">Register</button>
+</form> -->

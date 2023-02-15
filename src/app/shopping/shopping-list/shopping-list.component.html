@@ -1,0 +1,13 @@
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+        <mat-nav-list *ngFor="let link of sideNavLinks">
+            <a mat-list-item routerLink={{link.id}}>{{link.name}}</a>
+            <mat-divider></mat-divider>
+            <!-- <a mat-list-item routerLink="products">Manage Products</a> -->
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

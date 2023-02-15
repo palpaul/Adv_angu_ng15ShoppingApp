@@ -1,0 +1,26 @@
+<h2>List of Products</h2>
+{{myDate | date }}
+
+<div>
+    Search: <input type="text" [(ngModel)] ="searchString" name="txtSearch" placeholder="Search">  &nbsp;
+    <button class="btn btn-primary">Search</button>
+</div>
+
+<br>
+<div class="card-group ">
+<div class="card" [ngStyle]="{'width':'18rem','margin-right':'5px'}" 
+*ngFor = "let products of productList | searchData : searchString:'name' "> 
+<h2 class="card-header bg-warning">{{products.name | uppercase}}</h2>
+<div class="card-body">
+    Name: {{products.name}}
+    <br/>
+    Description: {{products.description}}
+    <br/>
+    Price: {{products.price | currency : 'INR'}}
+    
+</div>
+<div>
+    <button class="btn btn-primary">Add to Card</button>
+</div>
+</div>
+</div>
